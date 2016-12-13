@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	outline: 1px solid grey;
+	/*outline: 1px solid grey;*/
 	font-family: 'Fjalla One', sans-serif;
 }
 .all-wrapper {
@@ -33,11 +33,11 @@
 	background-color: rgba(0,0,0,0.2);
 }
 .photos {
-	display: inline-block;
 	list-style: none;
+	text-align: center; 
 }
-.photo {
+.photos li {
 	display: inline-block;
-	width: 30%
-	height: 100px;
+	margin: 20px;
+
 }
