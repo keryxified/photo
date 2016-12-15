@@ -28,6 +28,7 @@
 	background-color: rgba(0,0,0,0.1);
 	border-bottom: 2px solid black;
 	text-decoration: none;
+	color: #000;
 }
 .menu-list a:hover {
 	background-color: rgba(0,0,0,0.2);
