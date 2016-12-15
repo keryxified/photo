@@ -32,6 +32,10 @@
 .menu-list a:hover {
 	background-color: rgba(0,0,0,0.2);
 }
+.galleria {
+	width: 100%;
+	height: 800px;
+}
 .photos {
 	list-style: none;
 	text-align: center; 
