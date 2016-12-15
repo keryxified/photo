@@ -46,3 +46,11 @@
 	margin: 20px;
 
 }
+.iamge {
+	float: left;
+	width: 390px;
+
+}
+.iamge img {
+	width: 100%;
+}
