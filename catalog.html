@@ -5,8 +5,10 @@
 	<title>Photographer Alexandra Tikhova</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/masonry.js"></script>
+	
 </head>
 <body>
 	<div class="all-wrapper">
@@ -24,20 +26,20 @@
 		</header>
 		<main>
 			<div class="galler">
-					<a class="iamge" href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
-					<a class="iamge" href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
-					<a class="iamge" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="iamge" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="iamge" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="iamge" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="iamge" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="iamge" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="iamge" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="iamge" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="iamge" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
 			</div>
 		</main>
 		<footer>
@@ -56,7 +58,7 @@ $(document).ready(function(){
 	  isResizable: true,
 // перестраивает блоки при изменении размеров окна
 	  isAnimated: true,
-	  columnWidth: 400,
+	  // columnWidth: 400,
 // анимируем перестроение блоков
           animationOptions: { 
 	      queue: false, 
@@ -66,5 +68,6 @@ $(document).ready(function(){
 	}); 
   });
   </script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

@@ -48,7 +48,8 @@
 }
 .iamge {
 	float: left;
-	width: 390px;
+	max-width: 400px;
+	min-width: 200px;
 
 }
 .iamge img {
