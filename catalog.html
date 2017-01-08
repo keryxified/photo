@@ -10,8 +10,10 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.justifiedGallery.min.js"></script>
 	<link href="css/justifiedGallery.min.css" rel="stylesheet">
-	<script src="js/simple-lightbox.js"></script>
-	<link href="css/simple-lightbox.css" rel="stylesheet">
+	<script src="js/jquery.swipebox.js"></script>
+	<link rel="stylesheet" href="css/swipebox.css">
+	<!-- <script src="js/simple-lightbox.js"></script>
+	<link href="css/simple-lightbox.css" rel="stylesheet"> -->
 </head>
 <body>
 	<div class="all-wrapper">
@@ -28,7 +30,7 @@
 						<li><a href="">LOVESTORY</a></li>
 						<li><a href="">WEDDING</a></li>
 						<li><a href="">CHILDREN</a></li>
-						<li><a href="">STUDIO</a></li>
+						<li><a href="">PORTRAIT</a></li>
 					</ul></li>
 					<li><a href="">ABOUT</a></li>
 					<li><a href="">CONTACTS</a></li>
@@ -39,20 +41,20 @@
 		</header>
 		<main>
 			<div class="galler">
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="iamge" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
 			</div>
 		</main>
 		<footer>
@@ -66,9 +68,11 @@
 		margins : 3
 		});
   </script>
-  <!-- <script src="js/lightbox.js"></script> -->
-  <script>
-  var lightbox = $('.galler a').simpleLightbox(options);
-  </script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+
 </body>
 </html>
