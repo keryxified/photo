@@ -6,10 +6,12 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
-	<link href="css/lightbox.css" rel="stylesheet">
+	<!-- <link href="css/lightbox.css" rel="stylesheet"> -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.justifiedGallery.min.js"></script>
 	<link href="css/justifiedGallery.min.css" rel="stylesheet">
+	<script src="js/simple-lightbox.js"></script>
+	<link href="css/simple-lightbox.css" rel="stylesheet">
 </head>
 <body>
 	<div class="all-wrapper">
@@ -64,6 +66,9 @@
 		margins : 3
 		});
   </script>
-  <script src="js/lightbox.js"></script>
+  <!-- <script src="js/lightbox.js"></script> -->
+  <script>
+  var lightbox = $('.galler a').simpleLightbox(options);
+  </script>
 </body>
 </html>
