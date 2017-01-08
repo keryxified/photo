@@ -3,11 +3,25 @@
 	padding: 0;
 	/*outline: 1px solid grey;*/
 	font-family: 'Fjalla One', sans-serif;
+	background-color: #f4f4f4;
 }
 .all-wrapper {
 	padding: 0 2%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+header {
+	margin-bottom: 0px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.logo p {
+	font-family: 'Caveat';
+	font-size: 40px;
 }
 .menu-list {
 	list-style: none;
@@ -26,8 +40,8 @@
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 18px;
 	display: block;
-	padding: 10px 5px 2px	5px;
-	background-color: rgba(255,255,255,0.8);
+	padding: 10px 5px 0	5px;
+	background-color: rgba(255, 255, 255, 0.6);
 	border-bottom: 2px solid black;
 	text-decoration: none;
 	color: #000;
@@ -35,10 +49,12 @@
 .menu-list a:hover {
 	background-color: rgba(0,0,0,0.8);
 	color: rgba(255,255,255,0.8);
+	border-bottom: 2px solid rga(0,0,0,0.8);
 }
 .drop-menu {
 	display: none;
 	list-style: none;
+	position: relative;
 	z-index: 999;
 }
 .hover-menu:hover .drop-menu {
@@ -50,6 +66,10 @@
 .galler {
 	width: 100%;
 	z-index: 0;
+}
+.galleria {
+	height: 900px;
+	background-color: #000000;
 }
 .photos {
 	list-style: none;
