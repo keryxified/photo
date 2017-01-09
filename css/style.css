@@ -3,6 +3,8 @@
 	padding: 0;
 	/*outline: 1px solid grey;*/
 	font-family: 'Fjalla One', sans-serif;
+}
+body {
 	background-color: #f4f4f4;
 }
 .all-wrapper {
@@ -16,12 +18,12 @@ header {
 }
 .logo {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left: 10px;
 }
 .logo p {
-	font-family: 'Caveat';
-	font-size: 40px;
+	font-family: 'Fjalla One';
+	font-size: 30px;
 }
 .menu-list {
 	list-style: none;
@@ -69,7 +71,6 @@ header {
 }
 .galleria {
 	height: 900px;
-	background-color: #000000;
 }
 .photos {
 	list-style: none;
@@ -79,10 +80,3 @@ header {
 	display: inline-block;
 	margin: 20px;
 }
-/*.iamge {
-	float: left;
-	width: 400px;
-}
-.iamge img {
-	width: 100%;
-}*/

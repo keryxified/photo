@@ -6,14 +6,12 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
-	<!-- <link href="css/lightbox.css" rel="stylesheet"> -->
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/jquery.justifiedGallery.min.js"></script>
 	<link href="css/justifiedGallery.min.css" rel="stylesheet">
-	<script src="js/jquery.swipebox.js"></script>
-	<link rel="stylesheet" href="css/swipebox.css">
-	<!-- <script src="js/simple-lightbox.js"></script>
-	<link href="css/simple-lightbox.css" rel="stylesheet"> -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
 </head>
 <body>
 	<div class="all-wrapper">
@@ -41,20 +39,20 @@
 		</header>
 		<main>
 			<div class="galler">
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
-					<a class="swipebox" data-lightbox="roadtrip" href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo1.jpg" target="_blank"><img src="img/photo1.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo6.jpg" target="_blank"><img src="img/photo6.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo7.jpg" target="_blank"><img src="img/photo7.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo5.jpg" target="_blank"><img src="img/photo5.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo8.jpg" target="_blank"><img src="img/photo8.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo3.jpg" target="_blank"><img src="img/photo3.jpg"></a>
+					<a class="swipebox" rel="group"  href="img/photo4.jpg" target="_blank"><img src="img/photo4.jpg"></a>
 			</div>
 		</main>
 		<footer>
@@ -62,17 +60,24 @@
 			<div class="footer-links"></div>
 		</footer>
 	</div>
-	<script>
+	<script type="text/javascript">
 		$('.galler').justifiedGallery({
 		rowHeight : 200,
 		margins : 3
 		});
   </script>
-	<script type="text/javascript">
-		jQuery(function($) {
-			$(".swipebox").swipebox();
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".swipebox").fancybox({
+			helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.98)'
+            }
+        }
+    }
 		});
-	</script>
-
+	});
+</script>
 </body>
 </html>
