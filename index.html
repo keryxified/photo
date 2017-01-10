@@ -7,15 +7,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.slides.js"></script>
-	<script>
+	<link href="css/responsiveslides.css" rel="stylesheet" type="text/css">
+	<script src="js/responsiveslides.js"></script>
+	
+	<!-- <script src="js/jquery.slides.js"></script> -->
+<!-- 	<script>
     $(function(){
       $(".galleria").slidesjs({
         width: 940,
         height: 528
       });
     });
-  </script>
+  </script> -->
 </head>
 <body>
 	<div class="all-wrapper">
@@ -42,22 +45,30 @@
 			<div class="page-title"></div>
 		</header>
 		<main>
-			<div class="galleria">
-					<a href="img/photo1.jpg"><img src="img/sphoto1.jpg"></a>
-					<a href="img/photo2.jpg"><img src="img/sphoto2.jpg"></a>
-					<a href="img/photo3.jpg"><img src="img/sphoto3.jpg"></a>
-					<a href="img/photo4.jpg"><img src="img/sphoto4.jpg"></a>
-					<a href="img/photo5.jpg"><img src="img/sphoto5.jpg"></a>
-					<a href="img/photo1.jpg"><img src="img/sphoto1.jpg"></a>
-					<a href="img/photo2.jpg"><img src="img/sphoto2.jpg"></a>
-					<a href="img/photo3.jpg"><img src="img/sphoto3.jpg"></a>
-					<a href="img/photo4.jpg"><img src="img/sphoto4.jpg"></a>
-			</div>
+			<ul class="rslides">
+					<li><img src="img/photo1.jpg"></li>
+					<li><img src="img/photo2.jpg"></li>
+					<li><img src="img/photo3.jpg"></li>
+					<li><img src="img/photo4.jpg"></li>
+					<li><img src="img/photo5.jpg"></li>
+					<li><img src="img/photo1.jpg"></li>
+					<li><img src="img/photo2.jpg"></li>
+					<li><img src="img/photo3.jpg"></li>
+					<li><img src="img/photo4.jpg"></li>
+			</ul>
 		</main>
 		<footer>
 			<div class="copyright"></div>
 			<div class="footer-links"></div>
 		</footer>
 	</div>
+	<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+    	nav: true,
+    	pager: true
+    });
+  });
+</script>
 </body>
 </html>
