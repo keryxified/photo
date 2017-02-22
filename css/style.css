@@ -68,6 +68,22 @@ header {
 main {
 	position: relative;
 }
+@media all and (max-width: 700px) {
+  .logo {
+    position: relative;
+  }
+  .menu-list li {
+    width: 80%;
+    margin: 0 auto;  
+  }
+  .menu-list {
+    text-align: center;
+  }
+  .drop-menu {
+    display: block;
+
+  }
+}
 .galler {
 	width: 100%;
 	z-index: 0;
